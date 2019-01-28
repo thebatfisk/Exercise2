@@ -7,7 +7,7 @@
 > A semaphore is something that is used to controll access to a common resource, preventing two processes accessing a recource that only can handle one access at a time. This can for example be counting semaphores and binary semaphores (locks)
 
 ### What is a mutex?
-> A mutex controlls the resource usage for threads. When a thread wants a resource, it "ask the mutex", and the mutex will "give the lock" if/when the "lock is free". A mutex is a type of semaphore
+> A mutex controlls the resource usage for threads. When a thread wants a resource, it "ask the mutex", and the mutex will "give the lock" if/when the "lock is free". A mutex is a type of semaphore ("SEMAPHORE is SIGNALS, MUTEX is OWNERSHIP")
 
 ### What is the difference between a mutex and a binary semaphore?
 > Mutex is used to give exclusive access to a resource, while a binary semaphore should be used for synchronization
@@ -19,7 +19,7 @@
  > A race condition is when a program is non-derministic because of timing related problems, while a data race is when a program acces the same memory space at the same time without ordering. An example of both of these are two threads accessing a shared variable at the same time
 
 ### List some advantages of using message passing over lock-based synchronization primitives.
-> *Your answer here*
+> You are not as vulnerable to race conditions and deadlocks when you do not use the shared memory-concept. It is also easier to achieve higher performance with message passing.
 
 ### List some advantages of using lock-based synchronization primitives over message passing.
-> *Your answer here*
+> It is easier to achieve correctness with a lock-based synchronization system.
